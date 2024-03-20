@@ -1,0 +1,217 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/pmd/ont_pub_tmplt/moduleB" ],
+    "title" : {
+      "en" : "Ontology Publication Template for the PMD"
+    },
+    "iri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB",
+    "version" : "1.0.0",
+    "author" : [ "https://orcid.org/0000-0000-0000-0000" ],
+    "comments" : {
+      "en" : "This is an example ontology to help PMD partner projects to get an overview over the formal requirements imposed by HAP 4. \n                                           It's meant as a blueprint for updating the partner projects ontologies and thus does not carry any relevant concepts. This \n                                           file is related to the github repository https://github.com/materialdigital/ontology_publication_template where there is \n                                           more information about how to work with this example."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0000-0000-0000",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-12-15",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Doe J. (1960) Foo Ontology. Journal of Everything, 42(42), 3-42.",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontology Publication Template for the PMD",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub",
+    "baseIri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExampleClassStub"
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB",
+    "baseIri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA",
+        "type" : "iri"
+      } ],
+      "IAO_0000114" : [ {
+        "identifier" : "IAO_0000114",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/IAO_0000428",
+        "type" : "iri"
+      } ],
+      "IAO_0000117" : [ {
+        "identifier" : "IAO_0000117",
+        "language" : "undefined",
+        "value" : "PERSON: John Doe",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An example Class of Module B",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ExampleClassStubB",
+      "en" : "Example Class Stub of Module B"
+    },
+    "comment" : {
+      "en" : "An example Class of Module B"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "2",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA",
+    "baseIri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA",
+        "type" : "iri"
+      } ],
+      "IAO_0000114" : [ {
+        "identifier" : "IAO_0000114",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/IAO_0000428",
+        "type" : "iri"
+      } ],
+      "IAO_0000117" : [ {
+        "identifier" : "IAO_0000117",
+        "language" : "undefined",
+        "value" : "PERSON: John Doe",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An example relation of Module B",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "exampleRelationA",
+      "en" : "Example Relation of Module B"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA",
+    "inverse" : "3",
+    "baseIri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA",
+        "type" : "iri"
+      } ],
+      "IAO_0000114" : [ {
+        "identifier" : "IAO_0000114",
+        "language" : "undefined",
+        "value" : "http://purl.obolibrary.org/obo/IAO_0000428",
+        "type" : "iri"
+      } ],
+      "IAO_0000117" : [ {
+        "identifier" : "IAO_0000117",
+        "language" : "undefined",
+        "value" : "PERSON: John Doe",
+        "type" : "label"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "An example inverse relation of Module B",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "exampleInverseRelationA",
+      "en" : "Example Inverse Relation of Module B"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelation",
+    "baseIri" : "https://w3id.org/pmd/ont_pub_tmplt/moduleB",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "exampleRelation"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  } ]
+}

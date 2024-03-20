@@ -1,0 +1,139 @@
+[ {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.obolibrary.org/obo/IAO_0000117",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/bibliographicCitation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#definition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/bibliographicCitation" : [ {
+    "@value" : "Doe J. (1960) Foo Ontology. Journal of Everything, 42(42), 3-42."
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2023-12-15"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "https://orcid.org/0000-0000-0000-0000"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://creativecommons.org/licenses/by/4.0/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Ontology Publication Template for the PMD"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an example ontology to help PMD partner projects to get an overview over the formal requirements imposed by HAP 4. \n                                           It's meant as a blueprint for updating the partner projects ontologies and thus does not carry any relevant concepts. This \n                                           file is related to the github repository https://github.com/materialdigital/ontology_publication_template where there is \n                                           more information about how to work with this example."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/1.0.0"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/ExampleClassStub",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/ExampleClassStubA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.obolibrary.org/obo/IAO_0000114" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/IAO_0000428"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000117" : [ {
+    "@value" : "PERSON: John Doe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An example Class of Module A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Example Class Stub of Module A"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An example Class of Module A"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/exampleInverseRelationA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000114" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/IAO_0000428"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000117" : [ {
+    "@value" : "PERSON: John Doe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/ExampleClassStub"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Example Inverse Relation of Module A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/ExampleClassStub"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/exampleRelation"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An example inverse relation of Module A"
+  } ]
+}, {
+  "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/exampleRelation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/exampleRelationA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.obolibrary.org/obo/IAO_0000114" : [ {
+    "@id" : "http://purl.obolibrary.org/obo/IAO_0000428"
+  } ],
+  "http://purl.obolibrary.org/obo/IAO_0000117" : [ {
+    "@value" : "PERSON: John Doe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/ExampleClassStub"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Example Relation of Module A"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/pmd/ont_pub_tmplt/moduleA/ExampleClassStub"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@language" : "en",
+    "@value" : "An example relation of Module A"
+  } ]
+} ]
