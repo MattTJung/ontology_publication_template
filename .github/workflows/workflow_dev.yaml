@@ -59,9 +59,9 @@ jobs:
       - name: build html doc for all ttl files
         run: |
           wget -O widoco.jar https://github.com/dgarijo/Widoco/releases/download/v1.4.17/java-11-widoco-1.4.17-jar-with-dependencies.jar
-          mkdir -r html_out/ontology
-          mkdir -r html_out/moduleA
-          mkdir -r html_out/moduleB
+          mkdir -p html_out/ontology
+          mkdir -p html_out/moduleA
+          mkdir -p html_out/moduleB
           java -jar widoco.jar -ontFile build_html_doc/ontology.ttl -outFolder html_out/ontology -uniteSections -includeAnnotationProperties -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
           cp html_out/ontology/index-en.html html_out/ontology/index.html
           java -jar widoco.jar -ontFile build_html_doc/moduleA.ttl -outFolder html_out/moduleA -uniteSections -includeAnnotationProperties -lang en-de -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
