@@ -8,33 +8,47 @@ jobs:
   oops_report:
     runs-on: ubuntu-latest
     steps:
+      - name: check if oops-service is available
+        run: |
+             STATUSCODE=$(curl -sLI https://oops.linkeddata.es/rest | grep 'HTTP' | tail -1 | sed --regexp-extended 's/^.*([0-9]{3}).*/\1/')
+             if [ $STATUSCODE -ne 200 ]; then
+               echo "OOPS! REST API is not available. Status code: $STATUSCODE"
+               exit 1
+             fi
       - name: checkout
+        if: success()
         uses: actions/checkout@v4
         with:
           path: combine_onto_files
       - name: combine ontology files and remove obsolete imports
+        if: success()
         run: |
              mkdir out
              python -m pip install rdflib
              python combine_onto_files/.github/workflows/combine_onto_files.py -o out/combined.ttl --rdfout out/combined.rdf combine_onto_files/ontology.ttl combine_onto_files/moduleA.ttl combine_onto_files/moduleB.ttl
       - name: generate oops request xml
+        if: success()
         run: |
              python combine_onto_files/.github/workflows/generate_oops_request_content.py -o out/oops_request.xml -i out/combined.rdf
       - name: call oops api
+        if: success()
         run: |
              curl -o out/oops_response.xml -X POST -L -H "Content-Type: application/xml" -d @out/oops_request.xml https://oops.linkeddata.es/rest
       - name: generate oops report
+        if: success()
         run: |
              mkdir -p pages/$GITHUB_REF_NAME/oops_report
              cp combine_onto_files/.github/workflows/oops_report/* pages/$GITHUB_REF_NAME/oops_report
              mv pages/$GITHUB_REF_NAME/oops_report/show_oops_response.html pages/$GITHUB_REF_NAME/oops_report/index.html
              cp out/oops_response.xml pages/$GITHUB_REF_NAME/oops_report
       - name: generate artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: combined_ontologies
           path: out
       - name: generate artifact
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: gh-pages
