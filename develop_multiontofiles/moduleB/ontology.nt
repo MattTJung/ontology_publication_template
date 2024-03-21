@@ -1,0 +1,97 @@
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/pmd/ont_pub_tmplt/moduleB/1.0.0> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://purl.org/dc/terms/bibliographicCitation> "Doe J. (1960) Foo Ontology. Journal of Everything, 42(42), 3-42." .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://purl.org/dc/terms/created> "2023-12-15" .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://purl.org/dc/terms/creator> <https://orcid.org/0000-0000-0000-0000> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://purl.org/dc/terms/license> <http://creativecommons.org/licenses/by/4.0/> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://purl.org/dc/terms/title> "Ontology Publication Template for the PMD"@en .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an example ontology to help PMD partner projects to get an overview over the formal requirements imposed by HAP 4. \n                                           It's meant as a blueprint for updating the partner projects ontologies and thus does not carry any relevant concepts. This \n                                           file is related to the github repository https://github.com/materialdigital/ontology_publication_template where there is \n                                           more information about how to work with this example."@en .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/IAO_0000114
+<http://purl.obolibrary.org/obo/IAO_0000114> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.obolibrary.org/obo/IAO_0000117
+<http://purl.obolibrary.org/obo/IAO_0000117> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://www.w3.org/2002/07/owl#inverseOf> <https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelation> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: John Doe" .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pmd/ont_pub_tmplt/moduleA> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://www.w3.org/2000/01/rdf-schema#label> "Example Inverse Relation of Module B"@en .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA> <http://www.w3.org/2004/02/skos/core#definition> "An example inverse relation of Module B"@en .
+# 
+# https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelation
+# 
+# https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA> <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: John Doe" .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pmd/ont_pub_tmplt/moduleA> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA> <http://www.w3.org/2000/01/rdf-schema#label> "Example Relation of Module B"@en .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA> <http://www.w3.org/2004/02/skos/core#definition> "An example relation of Module B"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub
+# 
+# https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB> <http://purl.obolibrary.org/obo/IAO_0000114> <http://purl.obolibrary.org/obo/IAO_0000428> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB> <http://purl.obolibrary.org/obo/IAO_0000117> "PERSON: John Doe" .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB> <http://www.w3.org/2000/01/rdf-schema#comment> "An example Class of Module B"@en .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/pmd/ont_pub_tmplt/moduleA> .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB> <http://www.w3.org/2000/01/rdf-schema#label> "Example Class Stub of Module B"@en .
+<https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB> <http://www.w3.org/2004/02/skos/core#definition> "An example Class of Module B"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

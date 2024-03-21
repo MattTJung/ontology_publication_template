@@ -1,0 +1,55 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "Ontology Publication Template for the PMD"
+    },
+    "iri" : "https://w3id.org/pmd/ont_pub_tmplt",
+    "version" : "1.0.0",
+    "author" : [ "https://orcid.org/0000-0000-0000-0000" ],
+    "comments" : {
+      "en" : "This is an example ontology to help PMD partner projects to get an overview over the formal requirements imposed by HAP 4. \n                                           It's meant as a blueprint for updating the partner projects ontologies and thus does not carry any relevant concepts. This \n                                           file is related to the github repository https://github.com/materialdigital/ontology_publication_template where there is \n                                           more information about how to work with this example."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "https://orcid.org/0000-0000-0000-0000",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2023-12-15",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "undefined",
+        "value" : "Doe J. (1960) Foo Ontology. Journal of Everything, 42(42), 3-42.",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "Ontology Publication Template for the PMD",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ]
+}

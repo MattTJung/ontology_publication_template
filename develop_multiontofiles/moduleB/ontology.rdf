@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/pmd/ont_pub_tmplt/moduleB#"
+     xml:base="https://w3id.org/pmd/ont_pub_tmplt/moduleB"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="https://w3id.org/pmd/ont_pub_tmplt/moduleB">
+        <owl:versionIRI rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleB/1.0.0"/>
+        <terms:bibliographicCitation>Doe J. (1960) Foo Ontology. Journal of Everything, 42(42), 3-42.</terms:bibliographicCitation>
+        <terms:created>2023-12-15</terms:created>
+        <terms:creator rdf:resource="https://orcid.org/0000-0000-0000-0000"/>
+        <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <terms:title xml:lang="en">Ontology Publication Template for the PMD</terms:title>
+        <rdfs:comment xml:lang="en">This is an example ontology to help PMD partner projects to get an overview over the formal requirements imposed by HAP 4. 
+                                           It&apos;s meant as a blueprint for updating the partner projects ontologies and thus does not carry any relevant concepts. This 
+                                           file is related to the github repository https://github.com/materialdigital/ontology_publication_template where there is 
+                                           more information about how to work with this example.</rdfs:comment>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/bibliographicCitation -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/bibliographicCitation"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleInverseRelationA">
+        <owl:inverseOf rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelation"/>
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000117>PERSON: John Doe</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleA"/>
+        <rdfs:label xml:lang="en">Example Inverse Relation of Module B</rdfs:label>
+        <skos:definition xml:lang="en">An example inverse relation of Module B</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelation -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelation"/>
+    
+
+
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/pmd/ont_pub_tmplt/moduleB/exampleRelationA">
+        <rdfs:domain rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub"/>
+        <rdfs:range rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub"/>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000117>PERSON: John Doe</obo:IAO_0000117>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleA"/>
+        <rdfs:label xml:lang="en">Example Relation of Module B</rdfs:label>
+        <skos:definition xml:lang="en">An example relation of Module B</skos:definition>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub -->
+
+
+    <owl:Class rdf:about="https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStub"/>
+    
+
+
+    <!-- https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB -->
+
+
+    <owl:Class rdf:about="https://w3id.org/pmd/ont_pub_tmplt/moduleB/ExampleClassStubB">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
+        <obo:IAO_0000117>PERSON: John Doe</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">An example Class of Module B</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/pmd/ont_pub_tmplt/moduleA"/>
+        <rdfs:label xml:lang="en">Example Class Stub of Module B</rdfs:label>
+        <skos:definition xml:lang="en">An example Class of Module B</skos:definition>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
